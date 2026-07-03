@@ -1,0 +1,583 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Jost:ital,wght@0,100..900;1,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700&display=swap');
+
+/* RESET GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --maroon: #5c2438;
+    --maroon-soft: #7a3f52;
+    --khaki: #a9915f;
+    --khaki-soft: #cdbd93;
+    --ink: #1a1a1a;
+    --paper: #ededed;
+}
+
+body {
+    font-family: "Amaranth", sans-serif;
+    background-color: #ededed;
+    color: #1a1a1a;
+    overflow-x: hidden;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+/* CONTENEDOR PRINCIPAL OCUPA TODA LA PANTALLA */
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 50px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    z-index: 10;
+}
+
+/* CONTACTO */
+.contact-info p {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.logo {
+    font-size: 2.2rem;
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+/* AREA CENTRAL PARA CAPAS */
+.main-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* TÍTULO GIGANTE POSICIONADO MÁS ARRIBA */
+.giant-title {
+    position: absolute;
+    width: 100%;
+    top: 22vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.giant-title h1 {
+    font-size: 10.5vw; 
+    font-weight: 800;
+    color: #1a1a1a;
+    line-height: 0.9;
+    text-transform: uppercase;
+}
+
+/* Separación interna de las letras */
+.word-top {
+    letter-spacing: 8vw;
+    text-indent: 5vw;
+}
+
+.word-bottom {
+    letter-spacing: 3vw;
+    text-indent: 4vw;
+}
+
+/* Crea el hueco exacto para la modelo */
+.word-bottom span {
+    margin-right: 18vw; 
+}
+
+/* CONTENEDOR DE LA IMAGEN DE LA MODELO */
+.image-container {
+    position: absolute;
+    bottom: 0;
+    height: 90vh;
+    display: flex;
+    align-items: flex-end;
+    z-index: 2;
+}
+
+.model-img {
+    height: 100%;
+    object-fit: contain;
+}
+
+/* BLOQUE INFERIOR IZQUIERDO FIJADO MÁS ABAJO */
+.footer-info {
+    position: absolute;
+    bottom: 30px;
+    left: 60px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* DESCRIPCIÓN */
+.description {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.4;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+}
+
+/* BOTÓN VER CÓDIGO */
+.btn-code {
+    font-family: "Roboto", sans-serif;
+    display: inline-block;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 14px 36px;
+    border-radius: 14px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    width: max-content;
+    transition: background-color 0.2s ease;
+}
+
+.btn-code:hover {
+    background-color: #333333;
+}
+
+/* ==========================================================================
+   BARRA SUPERIOR 
+   ========================================================================== */
+
+.top-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    z-index: 20;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+    background-color: rgba(237, 237, 237, 0.85);
+    padding: 10px 30px;
+    border-radius: 30px;
+    backdrop-filter: blur(5px);
+}
+
+.nav-links a {
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #666;
+}
+
+/* ==========================================================================
+   SECCIÓN PROBLEMÁTICA (TRES TARJETAS)
+   ========================================================================== */
+
+.problem-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 120px 20px 40px 20px;
+}
+
+.section-title {
+    font-family: "Amaranth", sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #1a1a1a;
+}
+
+.problem-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.problem-card {
+    background-color: transparent;
+    border: 1px solid #5a3d3d;
+    border-radius: 18px;
+    padding: 35px 25px;
+    min-height: 320px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.problem-card p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.15rem;
+    line-height: 1.5;
+    color: #1a1a1a;
+    font-weight: 400;
+}
+
+/* CONTROL DE PESTAÑAS OCULTAS */
+.tab-panel {
+    display: none;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.tab-panel.active {
+    display: block;
+}
+
+/* ==========================================================================
+   FRANJA DE IMPACTO (dentro de Problemática)
+   ========================================================================== */
+
+.impact-strip {
+    max-width: 1200px;
+    margin: 50px auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.impact-bar {
+    width: 100%;
+    height: 10px;
+    background-color: rgba(26, 26, 26, 0.1);
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.impact-bar span {
+    display: block;
+    height: 100%;
+    background-color: var(--maroon);
+    border-radius: 6px;
+}
+
+.impact-stat p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    color: var(--ink);
+}
+
+.impact-stat strong {
+    font-size: 1.4rem;
+    color: var(--maroon);
+}
+
+/* ==========================================================================
+   PROPUESTA
+   ========================================================================== */
+
+.proposal-section,
+.audience-section,
+.cycle-section,
+.opportunities-section,
+.projection-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.proposal-intro {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    max-width: 780px;
+    margin-bottom: 45px;
+    color: var(--ink);
+}
+
+.proposal-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-bottom: 45px;
+}
+
+.proposal-card {
+    border-left: 3px solid var(--maroon);
+    padding: 10px 0 10px 22px;
+}
+
+.proposal-tag {
+    display: inline-block;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--maroon);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+}
+
+.proposal-card p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.5;
+    color: var(--ink);
+}
+
+.referentes-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 14px;
+}
+
+.referentes-label {
+    font-family: "Amaranth", sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-right: 6px;
+}
+
+.referente-chip {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9rem;
+    border: 1px solid var(--khaki);
+    color: var(--ink);
+    padding: 8px 18px;
+    border-radius: 20px;
+}
+
+/* ==========================================================================
+   PÚBLICO OBJETIVO / SISTEMA ACTUAL
+   ========================================================================== */
+
+.audience-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.audience-card {
+    background-color: rgba(92, 36, 56, 0.05);
+    border-radius: 18px;
+    padding: 35px 30px;
+}
+
+.section-title-sm {
+    font-family: "Amaranth", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--maroon);
+    margin-bottom: 18px;
+}
+
+.audience-card p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.55;
+    color: var(--ink);
+}
+
+/* ==========================================================================
+   SISTEMA INTEGRADO (CICLO)
+   ========================================================================== */
+
+.cycle-intro {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 780px;
+    margin-bottom: 40px;
+    color: var(--ink);
+}
+
+.cycle-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.cycle-step {
+    position: relative;
+    background-color: var(--ink);
+    color: var(--paper);
+    border-radius: 18px;
+    padding: 30px 25px;
+    min-height: 190px;
+}
+
+.cycle-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--khaki);
+    color: var(--ink);
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+}
+
+.cycle-step h3 {
+    font-family: "Amaranth", sans-serif;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.cycle-step p {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.45;
+    color: #d8d8d8;
+}
+
+/* ==========================================================================
+   OPORTUNIDADES DE MEJORA / INDICADORES
+   ========================================================================== */
+
+.opportunities-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px 40px;
+    margin-bottom: 55px;
+}
+
+.opportunities-list li {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    padding-left: 22px;
+    position: relative;
+    color: var(--ink);
+}
+
+.opportunities-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--maroon);
+}
+
+.opportunities-list strong {
+    color: var(--maroon);
+}
+
+.indicators-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.indicator-circle {
+    border: 2px solid var(--maroon);
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 25px;
+}
+
+.indicator-value {
+    font-family: "Amaranth", sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--maroon);
+    margin-bottom: 10px;
+}
+
+.indicator-label {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.85rem;
+    color: var(--ink);
+    max-width: 160px;
+}
+
+/* ==========================================================================
+   PROYECCIÓN 2030
+   ========================================================================== */
+
+.projection-section {
+    background-color: var(--maroon);
+    color: var(--paper);
+    border-radius: 24px;
+    max-width: 1160px;
+    padding: 60px 50px;
+    margin: 60px auto 90px auto;
+}
+
+.projection-section .section-title {
+    color: var(--paper);
+}
+
+.projection-section p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    max-width: 820px;
+}
+
+.projection-section .credits {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: var(--khaki-soft);
+}
+
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+
+@media (max-width: 900px) {
+    .giant-title h1 {
+        font-size: 14vw;
+    }
+    .problem-grid,
+    .impact-strip,
+    .proposal-grid,
+    .audience-section,
+    .cycle-grid,
+    .opportunities-list,
+    .indicators-grid {
+        grid-template-columns: 1fr;
+    }
+    .projection-section {
+        padding: 40px 30px;
+        border-radius: 0;
+    }
+}

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVA - Abrigo Modular</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="top-nav">
+        <div class="nav-links">
+            <a href="#" onclick="irAPortada(event)">Inicio</a>
+            <a href="#" onclick="irAProblematica(event)">MOVA</a>
+            <a href="#metas" onclick="irAMetas(event)">Metas 2030</a>
+        </div>
+    </nav>
+
+    <div id="pantalla-portada" class="container">
+        <header class="header">
+            <div class="contact-info">
+                <p>diseñomova@gmail.cl</p>
+                <p>@mova</p>
+            </div>
+            <div class="logo">MOVA</div>
+        </header>
+
+        <main class="main-content">
+            <div class="giant-title">
+                <h1 class="word-top">ABRIGO</h1>
+                <h1 class="word-bottom">MOD<span></span>ULAR</h1>
+            </div>
+
+            <div class="image-container">
+                <img src="ModeloAbrigoMOVA.png" alt="Modelo Abrigo MOVA 002" class="model-img">
+            </div>
+
+            <footer class="footer-info">
+                <p class="description">
+                    abrigo modular MOVA 002,<br>
+                    confecciona una prenda<br>
+                    simple y de calidad.
+                </p>
+                <a href="#patronajes" class="btn-code">ver código</a>
+            </footer>
+        </main>
+    </div>
+
+    <div id="pantalla-problema" class="tab-panel">
+        <header class="header" style="padding: 50px 60px 0 60px; position: relative; z-index: 10;">
+            <div class="contact-info">
+                <p>diseñomova@gmail.cl</p>
+                <p>@mova</p>
+            </div>
+            <div class="logo">MOVA</div>
+        </header>
+
+        <div class="problem-section">
+            <h2 class="section-title">Problemática</h2>
+            
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <p>Las prendas de abrigo se diseñan con mezclas heterogéneas irreversibles (tejido, forro, cierres, adhesivos) que imposibilitan su reciclaje textil-a-textil debido a la gran cantidad de materiales distintos que estos albergan.</p>
+                </div>
+                
+                <div class="problem-card">
+                    <p>El diseño industrial masivo empezó a desvincular la creación del vestuario de los oficios y talleres locales, invisibilizando el valor comunitario y centralizando las ganancias.</p>
+                </div>
+                
+                <div class="problem-card">
+                    <p>Inexistencia de canales abiertos que vinculen las toneladas de saldos textiles industriales existentes con patrones de diseño optimizados para su reutilización directa</p>
+                </div>
+            </div>
+
+            <div class="impact-strip">
+                <div class="impact-stat">
+                    <div class="impact-bar"><span style="width:85%"></span></div>
+                    <p><strong>85%</strong> vertederos o incinerados</p>
+                </div>
+                <div class="impact-stat">
+                    <div class="impact-bar"><span style="width:73%"></span></div>
+                    <p><strong>73%</strong> se pierde antes de ser manipulada</p>
+                </div>
+                <div class="impact-stat">
+                    <div class="impact-bar"><span style="width:1%"></span></div>
+                    <p><strong>1%</strong> reciclaje</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="proposal-section">
+            <h2 class="section-title">Propuesta</h2>
+            <p class="proposal-intro">Sistema de diseño textil basado en la compatibilidad material, la modularidad, la reparación, reutilización y la prolongación de la vida útil, poniendo en alto la colaboración y articulación de la red local.</p>
+
+            <div class="proposal-grid">
+                <div class="proposal-card">
+                    <span class="proposal-tag">Chaquetas y parkas urbanas</span>
+                    <p>Indumentaria exterior de alto rendimiento que combina funcionalidad, durabilidad y facilidad de reparación para reducir el descarte prematuro de prendas.</p>
+                </div>
+                <div class="proposal-card">
+                    <span class="proposal-tag">Monomaterialidad</span>
+                    <p>Fabricada íntegramente con poliéster reciclado de alta densidad, incluyendo tela exterior, forro, aislamiento térmico e hilos de costura.</p>
+                </div>
+                <div class="proposal-card">
+                    <span class="proposal-tag">Diseño modular</span>
+                    <p>La prenda se compone de módulos intercambiables que pueden ser reemplazados cuando presentan desgaste.</p>
+                </div>
+                <div class="proposal-card">
+                    <span class="proposal-tag">Código abierto</span>
+                    <p>Plataforma abierta con acceso al patronaje e información técnica, promoviendo la colaboración y el desarrollo de nuevos diseños.</p>
+                </div>
+            </div>
+
+            <div class="referentes-row">
+                <span class="referentes-label">Referentes</span>
+                <span class="referente-chip">Houdini Sportswear</span>
+                <span class="referente-chip">Cirkla</span>
+                <span class="referente-chip">Helly Hansen</span>
+            </div>
+        </div>
+
+        <div class="audience-section">
+            <div class="audience-card">
+                <h2 class="section-title-sm">Público objetivo</h2>
+                <p>Usuarios que consumen prendas de abrigo en retail y buscan mayor <strong>durabilidad, reparación y trazabilidad</strong>. También se dirige a marcas de retail que necesitan avanzar hacia modelos circulares.</p>
+            </div>
+            <div class="audience-card">
+                <h2 class="section-title-sm">Sistema actual</h2>
+                <p>Extracción de materias primas → producción → distribución → uso → desecho. Las prendas mezclan materiales difíciles de separar, dejando el fin de vida en manos del consumidor.</p>
+            </div>
+        </div>
+
+        <div class="cycle-section">
+            <h2 class="section-title">Sistema integrado de abrigo modular</h2>
+            <p class="cycle-intro">MOVA busca transformar la compra de prendas en el retail mediante un sistema colaborativo que promueve la circularidad y beneficia tanto a las personas como al medioambiente.</p>
+
+            <div class="cycle-grid">
+                <div class="cycle-step">
+                    <span class="cycle-number">1</span>
+                    <h3>MOVA</h3>
+                    <p>Crea un diseño modular para la sostenibilidad integral de la prenda.</p>
+                </div>
+                <div class="cycle-step">
+                    <span class="cycle-number">2</span>
+                    <h3>Confección</h3>
+                    <p>Diseñadores, comunidades locales y proveedores textiles crean la prenda junto a talleres locales.</p>
+                </div>
+                <div class="cycle-step">
+                    <span class="cycle-number">3</span>
+                    <h3>Distribución</h3>
+                    <p>La prenda llega a distribuidores y retail hasta el consumidor urbano y consciente.</p>
+                </div>
+                <div class="cycle-step">
+                    <span class="cycle-number">4</span>
+                    <h3>Venta y uso</h3>
+                    <p>El consumidor adquiere y utiliza la prenda a través del retail.</p>
+                </div>
+                <div class="cycle-step">
+                    <span class="cycle-number">5</span>
+                    <h3>Devolución</h3>
+                    <p>La prenda llega nuevamente al taller local para ser reparada y devuelta al usuario.</p>
+                </div>
+                <div class="cycle-step">
+                    <span class="cycle-number">6</span>
+                    <h3>Reparación y reciclaje</h3>
+                    <p>Reparación en taller local o derivación a plantas de reciclaje textil industrial.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="opportunities-section">
+            <h2 class="section-title">Oportunidades de mejora</h2>
+            <ul class="opportunities-list">
+                <li><strong>Diseñar</strong> desde el inicio para reparar, desmontar y reciclar.</li>
+                <li><strong>Reducir</strong> la mezcla de materiales.</li>
+                <li><strong>Incorporar</strong> etiquetas QR.</li>
+                <li><strong>Eliminar</strong> adhesivos permanentes.</li>
+                <li><strong>Crear</strong> redes de reparación local.</li>
+            </ul>
+
+            <div class="indicators-grid">
+                <div class="indicator-circle">
+                    <span class="indicator-value">&lt;120s</span>
+                    <span class="indicator-label">IDT — Índice de desensamblaje técnico</span>
+                </div>
+                <div class="indicator-circle">
+                    <span class="indicator-value">3→7 años</span>
+                    <span class="indicator-label">EVU — Extensión de vida útil</span>
+                </div>
+                <div class="indicator-circle">
+                    <span class="indicator-value">&gt;95%</span>
+                    <span class="indicator-label">ECM — Eficiencia de circularidad material</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="metas" class="projection-section">
+            <h2 class="section-title">Proyección 2030</h2>
+            <p>MOVA se proyecta como un <strong>estándar de diseño circular</strong> integrable al retail, no como una marca de nicho. Frente a futuras regulaciones sobre residuos y huella de carbono, propone prendas modulares y monomateriales que reducen costos de gestión, recuperan material reciclado de alta pureza y fidelizan al usuario mediante reparación, retorno y actualización de prendas.</p>
+            <p class="credits">Isidora Escobar · Josefa Pérez · María Jesús Pizarro · Fransisca Salinas · Florencia Segretti · Luna Quintanilla</p>
+        </div>
+    </div> 
+
+    <script>
+        function irAProblematica(event) {
+            event.preventDefault(); 
+            document.getElementById('pantalla-portada').style.display = 'none'; 
+            document.getElementById('pantalla-problema').classList.add('active'); 
+        }
+
+        function irAPortada(event) {
+            event.preventDefault();
+            document.getElementById('pantalla-problema').classList.remove('active'); 
+            document.getElementById('pantalla-portada').style.display = 'flex'; 
+        }
+
+        function irAMetas(event) {
+            event.preventDefault();
+            document.getElementById('pantalla-portada').style.display = 'none';
+            document.getElementById('pantalla-problema').classList.add('active');
+            document.getElementById('metas').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>
