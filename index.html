@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVA - Abrigo Modular</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="top-nav">
+        <div class="nav-links">
+            <a href="#" onclick="irAPortada(event)">Inicio</a>
+            <a href="#" onclick="irAProblematica(event)">MOVA</a>
+            <a href="#metas" onclick="irAMetas(event)">Metas 2030</a>
+        </div>
+    </nav>
+
+    <div id="pantalla-portada" class="container">
+        <header class="header">
+            <div class="contact-info">
+                <p>diseñomova@gmail.cl</p>
+                <p>@mova</p>
+            </div>
+            <div class="logo">MOVA</div>
+        </header>
+
+        <main class="main-content">
+            <div class="giant-title">
+                <h1 class="word-top">ABRIGO</h1>
+                <h1 class="word-bottom">MOD<span></span>ULAR</h1>
+            </div>
+
+            <div class="image-container">
+                <img src="ModeloAbrigoMOVA.png" alt="Modelo Abrigo MOVA 002" class="model-img">
+            </div>
+
+            <footer class="footer-info">
+                <p class="description">
+                    abrigo modular MOVA 002,<br>
+                    confecciona una prenda<br>
+                    simple y de calidad.
+                </p>
+                <a href="#galeria" class="btn-code" onclick="irAGaleria(event)">ver código</a>
+            </footer>
+        </main>
+    </div>
+
+    <div id="pantalla-problema" class="tab-panel">
+        <header class="header" style="padding: 50px 60px 0 60px; position: relative; z-index: 10;">
+            <div class="contact-info">
+                <p>diseñomova@gmail.cl</p>
+                <p>@mova</p>
+            </div>
+            <div class="logo">MOVA</div>
+        </header>
+
+        <div class="problem-section">
+            <p class="page-subtitle">Sistema de Diseño Distribuido y Plataforma de Vestuario Circular 2030</p>
+            <h2 class="section-title">Problemática</h2>
+            
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <p>Las prendas de abrigo se diseñan con mezclas heterogéneas irreversibles (tejido, forro, cierres, adhesivos) que imposibilitan su reciclaje textil-a-textil debido a la gran cantidad de materiales distintos que estos albergan.</p>
+                </div>
+                
+                <div class="problem-card">
+                    <p>El diseño industrial masivo empezó a desvincular la creación del vestuario de los oficios y talleres locales, invisibilizando el valor comunitario y centralizando las ganancias.</p>
+                </div>
+                
+                <div class="problem-card">
+                    <p>Inexistencia de canales abiertos que vinculen las toneladas de saldos textiles industriales existentes con patrones de diseño optimizados para su reutilización directa</p>
+                </div>
+            </div>
+
+            <div class="impact-strip">
+                <div class="impact-stat">
+                    <div class="impact-bar"><span style="width:85%"></span></div>
+                    <p><strong>85%</strong> vertederos o incinerados</p>
+                </div>
+                <div class="impact-stat">
+                    <div class="impact-bar"><span style="width:73%"></span></div>
+                    <p><strong>73%</strong> se pierde antes de ser manipulada</p>
+                </div>
+                <div class="impact-stat">
+                    <div class="impact-bar"><span style="width:1%"></span></div>
+                    <p><strong>1%</strong> reciclaje</p>
+                </div>
+            </div>
+
+            <div class="context-callout">
+                <p>Menos del <strong>1% de los residuos textiles globales</strong> se recicla en nuevas fibras. El nudo crítico es la heterogeneidad de materiales y la desconexión total entre los diseñadores y el fin de vida de la prenda.</p>
+                <p>Según la <strong>Teoría de los Tercios</strong> de Tim Cross, el rediseño profundo y la modificación de detalles como hilos compatibles permitirían salvar millones de toneladas de textiles sin esperar nuevas tecnologías.</p>
+            </div>
+        </div>
+
+        <div class="proposal-section">
+            <h2 class="section-title">Propuesta</h2>
+            <p class="proposal-intro">Sistema de diseño textil basado en la compatibilidad material, la modularidad, la reparación, reutilización y la prolongación de la vida útil, poniendo en alto la colaboración y articulación de la red local.</p>
+
+            <div class="proposal-grid">
+                <div class="proposal-card">
+                    <span class="proposal-tag">Chaquetas y parkas urbanas</span>
+                    <p>Indumentaria exterior de alto rendimiento que combina funcionalidad, durabilidad y facilidad de reparación para reducir el descarte prematuro de prendas.</p>
+                </div>
+                <div class="proposal-card">
+                    <span class="proposal-tag">Monomaterialidad</span>
+                    <p>Fabricada íntegramente con poliéster reciclado de alta densidad, incluyendo tela exterior, forro, aislamiento térmico e hilos de costura.</p>
+                </div>
+                <div class="proposal-card">
+                    <span class="proposal-tag">Diseño modular</span>
+                    <p>La prenda se compone de módulos intercambiables que pueden ser reemplazados cuando presentan desgaste.</p>
+                </div>
+                <div class="proposal-card">
+                    <span class="proposal-tag">Código abierto</span>
+                    <p>Plataforma abierta con acceso al patronaje e información técnica, promoviendo la colaboración y el desarrollo de nuevos diseños.</p>
+                </div>
+            </div>
+
+            <div class="referentes-row">
+                <span class="referentes-label">Referentes</span>
+                <span class="referente-chip">Houdini Sportswear</span>
+                <span class="referente-chip">Cirkla</span>
+                <span class="referente-chip">Helly Hansen</span>
+            </div>
+        </div>
+
+        <div class="how-section">
+            <h2 class="section-title">Cómo funciona</h2>
+            <p class="how-intro">MOVA opera como un Sistema Producto-Servicio (PSS) de código abierto: una plataforma digital y un ecosistema de comunidad física.</p>
+
+            <div class="component-grid">
+                <div class="component-card">
+                    <span class="component-index">01</span>
+                    <h3>Plataforma digital</h3>
+                    <p>Aloja patrones de diseño de <strong>residuo cero</strong> (zero-waste layout), instrucciones pedagógicas de costura y un mapa georreferenciado de talleres locales certificados.</p>
+                </div>
+                <div class="component-card">
+                    <span class="component-index">02</span>
+                    <h3>Abrigo modular</h3>
+                    <p>Prenda impermeable urbana bajo el principio de <strong>monomaterialidad</strong> (100% poliéster reciclado existente, incluyendo forro e hilos). Puños, capuchas y paneles frontales se desmontan con herrajes mecánicos, permitiendo reparación, cambio estético o desensamblaje limpio en menos de 2 minutos.</p>
+                </div>
+            </div>
+
+            <div class="flow-diagram">
+                <div class="flow-node flow-node-main">Plataforma digital de código abierto</div>
+                <div class="flow-arrow">↓ descarga de patrones modulares ↓</div>
+                <div class="flow-row">
+                    <div class="flow-node">Talleres de costura locales<span>manufactura con telas existentes</span></div>
+                    <div class="flow-node">Usuarios finales / makers<span>ensamblaje, uso y co-reparación</span></div>
+                </div>
+                <div class="flow-arrow">↓</div>
+                <div class="flow-node flow-node-main">Red de nodos locales de reparación e intercambio de módulos</div>
+            </div>
+        </div>
+
+        <div class="strategy-section">
+            <h2 class="section-title">Estrategia circular</h2>
+            <p class="how-intro">El proyecto aplica de forma prioritaria tres enfoques de Ecodiseño y Cradle to Cradle:</p>
+            <div class="strategy-grid">
+                <div class="strategy-card">
+                    <span class="strategy-tag">R1 · Replantear</span>
+                    <p>Sustituye la producción corporativa centralizada por un modelo distribuido: el conocimiento es libre y global, pero la manufactura es física, ética y local.</p>
+                </div>
+                <div class="strategy-card">
+                    <span class="strategy-tag">R3 · Reutilizar / Upcycling</span>
+                    <p>El sistema no genera materiales vírgenes; aprovecha el deadstock existente en el entorno para el ensamblaje de la pieza piloto.</p>
+                </div>
+                <div class="strategy-card">
+                    <span class="strategy-tag">R4 · Reparar</span>
+                    <p>Extensión drástica de la vida útil biológica del producto mediante módulos estándar (mangas, capuchas) intercambiables por el propio usuario.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="audience-section">
+            <div class="audience-card">
+                <h2 class="section-title-sm">Público objetivo</h2>
+                <p>Usuarios que consumen prendas de abrigo en retail y buscan mayor <strong>durabilidad, reparación y trazabilidad</strong>. También se dirige a marcas de retail que necesitan avanzar hacia modelos circulares.</p>
+            </div>
+            <div class="audience-card">
+                <h2 class="section-title-sm">Sistema actual</h2>
+                <p>Diseño cerrado e híbrido: las prendas mezclan materiales difíciles de separar, dejando el fin de vida en manos del consumidor.</p>
+                <div class="mini-flow">
+                    <span>Extracción petróleo / poliéster virgen</span>
+                    <span>Manufactura retail tradicional</span>
+                    <span>Consumo pasivo</span>
+                    <span>Vertedero / incineración</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="cycle-section">
+            <h2 class="section-title">Sistema integrado de abrigo modular</h2>
+            <p class="cycle-intro">MOVA busca transformar la compra de prendas en el retail mediante un sistema colaborativo que promueve la circularidad y beneficia tanto a las personas como al medioambiente.</p>
+
+            <div class="cycle-grid">
+                <div class="cycle-step">
+                    <span class="cycle-number">1</span>
+                    <h3>MOVA</h3>
+                    <p>Crea un diseño modular para la sostenibilidad integral de la prenda.</p>
+                </div>
+                <div class="cycle-step">
+                    <span class="cycle-number">2</span>
+                    <h3>Confección</h3>
+                    <p>Diseñadores, comunidades locales y proveedores textiles crean la prenda junto a talleres locales.</p>
+                </div>
+                <div class="cycle-step">
+                    <span class="cycle-number">3</span>
+                    <h3>Distribución</h3>
+                    <p>La prenda llega a distribuidores y retail hasta el consumidor urbano y consciente.</p>
+                </div>
+                <div class="cycle-step">
+                    <span class="cycle-number">4</span>
+                    <h3>Venta y uso</h3>
+                    <p>El consumidor adquiere y utiliza la prenda a través del retail.</p>
+                </div>
+                <div class="cycle-step">
+                    <span class="cycle-number">5</span>
+                    <h3>Devolución</h3>
+                    <p>La prenda llega nuevamente al taller local para ser reparada y devuelta al usuario.</p>
+                </div>
+                <div class="cycle-step">
+                    <span class="cycle-number">6</span>
+                    <h3>Reparación y reciclaje</h3>
+                    <p>Reparación en taller local o derivación a plantas de reciclaje textil industrial.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="opportunities-section">
+            <h2 class="section-title">Oportunidades de mejora</h2>
+            <ul class="opportunities-list">
+                <li><strong>Diseñar</strong> desde el inicio para reparar, desmontar y reciclar.</li>
+                <li><strong>Reducir</strong> la mezcla de materiales.</li>
+                <li><strong>Incorporar</strong> etiquetas QR.</li>
+                <li><strong>Eliminar</strong> adhesivos permanentes.</li>
+                <li><strong>Crear</strong> redes de reparación local.</li>
+            </ul>
+
+            <table class="indicators-table">
+                <thead>
+                    <tr>
+                        <th>Indicador técnico</th>
+                        <th>Unidad de medida</th>
+                        <th>Meta fundamentada al 2030</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Índice de Replicabilidad Descentralizada (IRD)</td>
+                        <td>N.º de descargas de moldería abierta y talleres activos mapeados.</td>
+                        <td>Activar una red de mínimo <strong>30 talleres barriales</strong> interconectados operando de forma autónoma.</td>
+                    </tr>
+                    <tr>
+                        <td>Desviación de Residuo Textil Existente (DRT)</td>
+                        <td>Kilogramos de telas sobrantes (deadstock) reincorporadas al sistema.</td>
+                        <td>Garantizar que el <strong>85% de la masa total</strong> de las chaquetas piloto provenga de textiles ya fabricados.</td>
+                    </tr>
+                    <tr>
+                        <td>Tiempo de Desensamblaje Técnico (TDT)</td>
+                        <td>Segundos cronometrados para separar componentes no textiles.</td>
+                        <td>Lograr la separación del <strong>100% de las piezas en menos de 120 segundos</strong> con herramientas caseras.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="business-section">
+            <h2 class="section-title">Modelo de implementación</h2>
+            <div class="business-grid">
+                <div class="business-card">
+                    <span class="section-title-sm">Propuesta de valor</span>
+                    <p>Vestuario técnico modular de alto valor estético, trazable, 100% reparable localmente y diseñado para no generar residuos materiales.</p>
+                </div>
+                <div class="business-card">
+                    <span class="section-title-sm">Ingresos alternativos</span>
+                    <p>Licencias comerciales para marcas independientes, venta directa de herrajes mecánicos monomateriales estandarizados y suscripciones de soporte técnico para la red de talleres.</p>
+                </div>
+                <div class="business-card">
+                    <span class="section-title-sm">Alianzas clave</span>
+                    <p>Red de talleres de costura barriales, recolectores de mermas textiles industriales y plantas de valorización a gran escala como Cirkla Chile.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="metas" class="projection-section">
+            <h2 class="section-title">Proyección 2030</h2>
+            <p>Hacia el año 2030, la escasez de recursos y las leyes de Responsabilidad Extendida del Productor (REP) aplicadas a textiles transformarán por completo el consumo. MOVA escala exponencialmente porque deja de ser una solución de nicho artesanal y se convierte en una <strong>infraestructura digital colectiva</strong>. Si el modelo se masifica, rompe la dependencia del transporte transoceánico de la moda rápida y reduce drásticamente las emisiones asociadas al retail.</p>
+            <p>La moda del 2030 abandona las dinámicas de hiperproducción lineal para consolidar un ecosistema donde las comunidades tienen las herramientas técnicas y el conocimiento libre para producir, vestir, cuidar y reciclar su propio abrigo de forma local, justa y regenerativa.</p>
+            <p class="credits">Isidora Escobar · Josefa Pérez · María Jesús Pizarro · Fransisca Salinas · Florencia Segretti · Luna Quintanilla</p>
+        </div>
+
+        <div class="sources-section">
+            <h2 class="section-title">Referentes y fuentes de información</h2>
+            <div class="sources-grid">
+                <div class="sources-card">
+                    <span class="component-index">Estrategia abierta</span>
+                    <p><em>Precious Plastic</em> y <em>Wikihouse</em> — modelos globales de diseño distribuido en código abierto.</p>
+                </div>
+                <div class="sources-card">
+                    <span class="component-index">Ecodiseño de producto</span>
+                    <p><em>Mono Air Houdi</em> — textiles libres de desprendimiento de microplásticos — y <em>Helly Hansen Mono Material</em>.</p>
+                </div>
+                <div class="sources-card">
+                    <span class="component-index">Infraestructura</span>
+                    <p><em>Cirkla</em> — planta de reciclaje textil industrial en Chile — y <em>Fibre Market</em> de Christien Meindertsma, clasificación óptica molecular de fibras existentes.</p>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <div id="pantalla-galeria" class="tab-panel">
+        <header class="header" style="padding: 50px 60px 0 60px; position: relative; z-index: 10;">
+            <div class="contact-info">
+                <p>diseñomova@gmail.cl</p>
+                <p>@mova</p>
+            </div>
+            <div class="logo">MOVA</div>
+        </header>
+
+        <div class="gallery-section">
+            <h2 class="section-title">Galería</h2>
+            <p class="how-intro">Referencias visuales del abrigo modular MOVA: el sistema de módulos, herrajes desmontables y detalles de confección.</p>
+
+            <div class="gallery-grid">
+                <button class="gallery-item" onclick="abrirLightbox(0)"><img src="images/mova-01.jpg" alt="Abrigo modular MOVA — vista 1"></button>
+                <button class="gallery-item" onclick="abrirLightbox(1)"><img src="images/mova-02.jpg" alt="Abrigo modular MOVA — vista 2"></button>
+                <button class="gallery-item" onclick="abrirLightbox(2)"><img src="images/mova-03.jpg" alt="Abrigo modular MOVA — vista 3"></button>
+                <button class="gallery-item" onclick="abrirLightbox(3)"><img src="images/mova-04.jpg" alt="Abrigo modular MOVA — vista 4"></button>
+                <button class="gallery-item" onclick="abrirLightbox(4)"><img src="images/mova-05.jpg" alt="Abrigo modular MOVA — vista 5"></button>
+                <button class="gallery-item" onclick="abrirLightbox(5)"><img src="images/mova-06.jpg" alt="Abrigo modular MOVA — vista 6"></button>
+                <button class="gallery-item" onclick="abrirLightbox(6)"><img src="images/mova-07.jpg" alt="Abrigo modular MOVA — vista 7"></button>
+                <button class="gallery-item" onclick="abrirLightbox(7)"><img src="images/mova-08.jpg" alt="Abrigo modular MOVA — vista 8"></button>
+            </div>
+        </div>
+
+        <div id="lightbox" class="lightbox" onclick="cerrarLightbox(event)">
+            <button class="lightbox-close" onclick="cerrarLightbox(event)">✕</button>
+            <button class="lightbox-nav lightbox-prev" onclick="moverLightbox(event,-1)">‹</button>
+            <img id="lightbox-img" src="" alt="">
+            <button class="lightbox-nav lightbox-next" onclick="moverLightbox(event,1)">›</button>
+        </div>
+    </div>
+
+    <script>
+        function irAProblematica(event) {
+            event.preventDefault(); 
+            document.getElementById('pantalla-portada').style.display = 'none'; 
+            document.getElementById('pantalla-problema').classList.add('active'); 
+            document.getElementById('pantalla-galeria').classList.remove('active');
+        }
+
+        function irAPortada(event) {
+            event.preventDefault();
+            document.getElementById('pantalla-problema').classList.remove('active'); 
+            document.getElementById('pantalla-galeria').classList.remove('active');
+            document.getElementById('pantalla-portada').style.display = 'flex'; 
+        }
+
+        function irAMetas(event) {
+            event.preventDefault();
+            document.getElementById('pantalla-portada').style.display = 'none';
+            document.getElementById('pantalla-problema').classList.add('active');
+            document.getElementById('pantalla-galeria').classList.remove('active');
+            document.getElementById('metas').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function irAGaleria(event) {
+            event.preventDefault();
+            document.getElementById('pantalla-portada').style.display = 'none';
+            document.getElementById('pantalla-problema').classList.remove('active');
+            document.getElementById('pantalla-galeria').classList.add('active');
+        }
+
+        const galeriaImgs = [
+            'images/mova-01.jpg',
+            'images/mova-02.jpg',
+            'images/mova-03.jpg',
+            'images/mova-04.jpg',
+            'images/mova-05.jpg',
+            'images/mova-06.jpg',
+            'images/mova-07.jpg',
+            'images/mova-08.jpg'
+        ];
+        let lightboxIndex = 0;
+
+        function abrirLightbox(i) {
+            lightboxIndex = i;
+            document.getElementById('lightbox-img').src = galeriaImgs[i];
+            document.getElementById('lightbox').classList.add('open');
+        }
+
+        function cerrarLightbox(event) {
+            if (event.target.id === 'lightbox' || event.target.classList.contains('lightbox-close')) {
+                document.getElementById('lightbox').classList.remove('open');
+            }
+        }
+
+        function moverLightbox(event, dir) {
+            event.stopPropagation();
+            lightboxIndex = (lightboxIndex + dir + galeriaImgs.length) % galeriaImgs.length;
+            document.getElementById('lightbox-img').src = galeriaImgs[lightboxIndex];
+        }
+
+        document.addEventListener('keydown', function(e) {
+            const lb = document.getElementById('lightbox');
+            if (!lb.classList.contains('open')) return;
+            if (e.key === 'Escape') lb.classList.remove('open');
+            if (e.key === 'ArrowRight') moverLightbox(e, 1);
+            if (e.key === 'ArrowLeft') moverLightbox(e, -1);
+        });
+    </script>
+
+</body>
+</html>
